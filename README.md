@@ -9,7 +9,7 @@ This network opens the possibility of deploying remote sensors and having them l
 My project is a wave sensor, capturing wave height and period (time between wave crests) to determine wave energy - which directly relates to shoreline erosion.  This is based off of the [Smart Buoy](https://t3chflicks.org/Projects/smart-buoy/). 
 
 ## Note
-This projectLoXRa Sidewalk for micropython) is likely dead for now.  Amazon has not made it easy to DIY connect to Sidewalk.
+This project (LoRa Sidewalk for micropython) is likely dead for now.  Amazon has not made it easy to DIY connect to Sidewalk.
 1) While I want to use LoRa, BLE (Low Energy Bluetooth) is required to reigster a device.  This not only complicates the software, but addes (basically unused) hardware to the system.
 2) LoRa messages are broken up into meta-data and the data.  The meta-data has a pointer to the data.  It is a bit awkward to try and create a pointer in micropython (object by refrence?).
 3) It is evident why there are only 4 reference implementations, and these have binary code to hide the details.  Most of the boto3 Python code is fro building AWS meta-data, making for a large implementation library (that doesn't easily trim down for micropython).
